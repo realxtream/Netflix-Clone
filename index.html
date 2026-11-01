@@ -1,119 +1,105 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Netflix Clone - Watch popular TV shows and movies online. Join today!">
-  <meta name="keywords" content="Netflix, clone, movies, TV shows, watch online">
-  <meta name="author" content="Empty-Hacker">
-  
-  <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+  <meta name="description" content="XTREAM - Watch popular web series and movies online for free.">
+  <title>XTREAM - Watch Free Movies & Shows</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <!-- Top Navigation Bar -->
   <header>
-    <nav class="navbar">
-      <div class="navbar_netflix">
-        <img src="images/logo.png" alt="Netflix Logo" class="netflix_logo" />
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 4%; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); position: fixed; width: 100%; z-index: 100; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; gap: 40px;">
+        <h1 style="color: #e50914; font-family: sans-serif; font-size: 1.8rem; margin: 0; letter-spacing: 2px;">XTREAM</h1>
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; font-size: 0.95rem;">
+          <li><a href="#" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+          <li><a href="#movies" style="color: #b3b3b3; text-decoration: none;">Movies</a></li>
+          <li><a href="#shows" style="color: #b3b3b3; text-decoration: none;">Shows</a></li>
+          <li><a href="#anime" style="color: #b3b3b3; text-decoration: none;">Anime</a></li>
+        </ul>
       </div>
-      <div class="navbar_nav_items">
-        <div class="nav_item">
-          <div class="dropdown_container">
-            <i class="fa fa-globe"></i>
-            <select name="language" id="languageSelect" class="language_drop_down">
-              <option value="english" selected>English</option>
-              <option value="hind">Hindi</option>
-            </select>
-          </div>
-        </div>
-        <div class="nav_item">
-          <button class="sign_in_button">Sign In</button>
-        </div>
+      <div>
+        <span style="color: white; font-size: 0.9rem; background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px;">Free Mode</span>
       </div>
     </nav>
   </header>
-  <main>
-    <section class="hero">
-      <div class="hero_bg_img_cont">
-        <img src="images/netflix_bg.jpg" alt="Netflix Banner Image" class="hero_bg_img" />
-      </div>
-      <div class="hero_bg_overlay"></div>
-      <div class="hero_card">
-        <h1 class="hero_title">
-          The biggest Indian hits. Ready to watch here <br> from ₹ 149.
-        </h1>
-        <h2 class="hero_subtitle">Join today. Cancel anytime.</h2>
-        <p class="hero_desc">
-          <nobr>Ready to watch? Enter your email to create or restart your membership.</nobr>
-          <br><br>
-          <nobr><input type="email" placeholder="Email Address" class="email">&nbsp;&nbsp;<button
-              class="get_started">Get
-              Started ></button></nobr>
-        </p>
-      </div>
-    </section>
-    <section class="style_cards">
-      <div class="card-1">
-        <div class="desc-1">
-          <h1>Enjoy on your TV.</h1>
-          <h3>Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and<br> more.</h3>
-        </div>
-        <img src="images/tv.png" alt="Streaming on TV">
-        <video class="video-1" autoplay playsinline muted loop> <source src="images/1.m4v"
-          type="video/mp4"></video>
+
+  <main style="background: #141414; color: white; min-height: 100vh; font-family: sans-serif;">
+    
+    <!-- Big Hero Banner Section -->
+    <section class="hero" style="position: relative; height: 80vh; display: flex; align-items: center; padding: 0 4%;">
+      <!-- Banner Background Image -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+        <img src="images/netflix_bg.jpg" alt="Hero Banner" style="width: 100%; height: 100%; object-fit: cover;" />
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, #141414 10%, rgba(20,20,20,0.4) 50%, rgba(20,20,20,0.8) 100%);"></div>
       </div>
 
-      <div class="card-2">
-        <img src="images/mobile.jpg" alt="Netflix Mobile">
-        <div class="desc-2">
-          <h1>Download your shows<br> to watch offline</h1>
-          <h3>Save your favourites easily and always have<br> something to watch.</h3>
+      <!-- Hero Text Content -->
+      <div style="position: relative; z-index: 2; max-width: 600px; margin-top: 100px;">
+        <span style="color: #e50914; font-weight: bold; letter-spacing: 3px; font-size: 0.9rem;">FEATURED SERIES</span>
+        <h1 style="font-size: 3.5rem; margin: 10px 0; font-weight: 800;">IT: WELCOME TO DERRY</h1>
+        <p style="color: #46d369; font-weight: bold; margin-bottom: 10px;">6.4 &nbsp; 2026 &nbsp; Drama &nbsp; Horror</p>
+        <p style="font-size: 1rem; line-height: 1.5; color: #d1d1d1; margin-bottom: 25px;">
+          Hundreds of years before Pennywise, three youngsters venture into the Western Wood... where they encounter a terrifying ancient spirit.
+        </p>
+        <div>
+          <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" style="background: white; color: black; padding: 12px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px;">
+            &#9654; Watch Now
+          </a>
         </div>
-      </div>
-      <div class="card-3">
-        <div class="desc-3">
-          <h1>Watch everywhere</h1>
-          <h3>Stream unlimited movies and TV shows on<br> your phone, tablet, laptop, and TV.</h3>
-        </div>
-        <img src="images/device-pile-in.png">
-        <video class="video-2" autoplay playsinline muted loop>
-          <source src="images/video-devices-in.m4v" type="video/mp4">
-        </video>
       </div>
     </section>
+
+    <!-- Continue Watching / Movie Rows Section -->
+    <section id="movies" style="padding: 20px 4%; position: relative; z-index: 2;">
+      <h2 style="font-size: 1.4rem; margin-bottom: 15px; font-weight: 500;">Continue Watching Movies</h2>
+      
+      <!-- Horizontal Video Cards Row -->
+      <div style="display: flex; gap: 15px; overflow-x: auto; padding-bottom: 20px; scrollbar-width: none;">
+        
+        <!-- Card 1 -->
+        <div style="min-width: 220px; flex: 0 0 auto; background: #2f2f2f; border-radius: 4px; overflow: hidden; cursor: pointer;">
+          <img src="images/mobile.jpg" alt="Movie 1" style="width: 100%; height: 130px; object-fit: cover;" />
+          <div style="padding: 10px;">
+            <p style="margin: 0; font-size: 0.9rem; font-weight: bold;">Episode 1</p>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" style="color: #e50914; font-size: 0.85Nrem; text-decoration: none; font-weight: bold;">Play Now &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div style="min-width: 220px; flex: 0 0 auto; background: #2f2f2f; border-radius: 4px; overflow: hidden; cursor: pointer;">
+          <img src="images/mobile.jpg" alt="Movie 2" style="width: 100%; height: 130px; object-fit: cover;" />
+          <div style="padding: 10px;">
+            <p style="margin: 0; font-size: 0.9rem; font-weight: bold;">Episode 2</p>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" style="color: #e50914; font-size: 0.85rem; text-decoration: none; font-weight: bold;">Play Now &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div style="min-width: 220px; flex: 0 0 auto; background: #2f2f2f; border-radius: 4px; overflow: hidden; cursor: pointer;">
+          <img src="images/mobile.jpg" alt="Movie 3" style="width: 100%; height: 130px; object-fit: cover;" />
+          <div style="padding: 10px;">
+            <p style="margin: 0; font-size: 0.9rem; font-weight: bold;">Episode 3</p>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" style="color: #e50914; font-size: 0.85rem; text-decoration: none; font-weight: bold;">Play Now &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
-  
-  <footer class="footer">
-    <p>Questions? Call 000-800-919-1694</p>
-    <div class="footer-cols">
-      <ul>
-        <li>FAQ</li>
-        <li>Investor Relations</li>
-        <li>Privacy</li>
-        <li>Speed Test</li>
-      </ul>
-      <ul>
-        <li>Help Center</li>
-        <li>Jobs</li>
-        <li>Cookie Preferences</li>
-        <li>Legal Notices</li>
-      </ul>
-      <ul>
-        <li>Account</li>
-        <li>Ways to Watch</li>
-        <li>Corporate Information</li>
-        <li>Only on Netflix</li>
-      </ul>
-      <ul>
-        <li>Media Centre</li>
-        <li>Terms of Use</li>
-        <li>Contact Use</li>
-        <li>Speed Test</li>
-      </ul>
-    </div>
+
+  <footer style="background: #141414; color: #777; padding: 40px 4%; font-size: 0.85rem; border-top: 1px solid #222;">
+    <p>Questions? Contact XTREAM Support.</p>
+    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 30px; margin-top: 15px;">
+      <li>FAQ</li>
+      <li>Help Centre</li>
+      <li>Terms of Use</li>
+      <li>Privacy</li>
+    </ul>
   </footer>
 </body>
-
 </html>
